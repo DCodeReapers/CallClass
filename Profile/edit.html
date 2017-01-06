@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Edit | Profile Page</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script type="text/javascript" src="scripts/jquery.min.1.12.0.js"></script>
+    <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="dropdown">
+        <button class="dropbtn"> 
+          <div class="col-md-2"><span class="glyphicon glyphicon-th-list"></span></div>
+          BROWSE COURSES
+        </button>
+        <div class="dropdown-content">
+        <a href="#">Finance</a>
+        <a href="#">Information Technology</a>
+        <a href="#">Languages</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="container">
+  <div class="content">
+  <div class="row">
+  <div class="col-md-3" id="left-bar">
+    <ul>
+      
+      <li style="background-color:#9d9d9d">
+      <a href="#">
+      <img src="img/avatar.jpg" alt="profile picture">
+      </a>
+      </li>
+      <li style="background-color: #465154; padding:20px;"><a href="#" style="color:white;">name</a></li>
+      <li><a href="#">Dashboard</a></li>
+      <li><a href="#">Courses</a></li>
+      <li><a href="#">Activity</a></li>
+      <li><a href="#">Profile</a></li>
+      <li><a href="#">Notifications</a></li>
+      <li><a href="#">Messages</a></li>
+      <li><a href="#">Forums</a></li>
+      <li><a href="#">Settings</a></li>
+    </ul>
+  </div>
+  <div class="col-md-9" id="right-bar" style="background-color:#a5c0c7;">
+	<div class="item-list" id="subnav">
+    	<ul>
+    		<li id="view"><a href="index.html">View</a></li>
+    		<li id="edit"><a href="#" id="current-selected">Edit</a></li>
+    		<li id="change-pic"><a href="changepic.html">Change Profile Photo</a></li>
+    	</ul>
+	</div>
+    <form class="form-horizontal" style="padding:50px" >
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="name">Name:</label>
+            <div class="col-sm-10">
+            	<input type="name" class="form-control" id="Name" placeholder="name" >
+            </div>
+        </div>
+		<div class="form-group">
+			<label class="control-label col-sm-2" for="email">Email:</label>
+			<div class="col-sm-10"> 
+			    <input type="email" class="form-control" id="email" placeholder="email">
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="control-label col-sm-2" for="edu">Education:</label>
+			<div class="col-sm-10">
+			    <input type="education" class="form-control" id="education" placeholder="Education" >
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="control-label col-sm-2" for="work">Work At:</label>
+			<div class="col-sm-10"> 
+			    <input type="work" class="form-control" id="work" placeholder="Work At">
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="control-label col-sm-2" for="edu" >About U:</label>
+			<div class="col-sm-10">
+			    <input type="text" class="form-control" id="about" placeholder="about" row="10">
+			</div>
+		</div>
+        <div class="form-group">            
+		    <label class="control-label col-sm-2" for="work">Skills:</label>
+		    <button type="submit" form="nameform" value="Submit">Core Os</button>
+		    <button type="submit" form="nameform" value="Submit">Netty</button>
+		    <button type="submit" form="nameform" value="Submit">Open Stack</button>
+		    <button type="submit" form="nameform" value="Submit">Big Data</button>
+		    <button type="submit" form="nameform" value="Submit">JPA</button>
+		    <button type="submit" form="nameform" value="Submit">JSF</button>
+		    <button type="submit" form="nameform" value="Submit">MySQL</button>
+		    <button type="submit" form="nameform" value="Submit">Linux</button>
+		    <button type="submit" form="nameform" value="Submit">Java</button>
+		    <button type="submit" form="nameform" value="Submit">MongoDB</button>
+		    <button type="submit" form="nameform" value="Submit">Oracle</button>
+		    <button type="submit" form="nameform" value="Submit">AWS</button>
+		</div>
+		<div class="form-group">
+		    <label class="control-label col-sm-2" for="work"> Interested Skills:</label>
+		    <button type="submit" form="nameform" value="Submit">Core Os</button>
+		    <button type="submit" form="nameform" value="Submit">Netty</button>
+		    <button type="submit" form="nameform" value="Submit">Open Stack</button>
+		    <button type="submit" form="nameform" value="Submit">Big Data</button>
+		    <button type="submit" form="nameform" value="Submit">JPA</button>
+		    <button type="submit" form="nameform" value="Submit">JSF</button>
+		    <button type="submit" form="nameform" value="Submit">MySQL</button>
+		    <button type="submit" form="nameform" value="Submit">Linux</button>
+		    <button type="submit" form="nameform" value="Submit">Java</button>
+		    <button type="submit" form="nameform" value="Submit">MongoDB</button>
+		    <button type="submit" form="nameform" value="Submit">Oracle</button>
+		    <button type="submit" form="nameform" value="Submit">AWS</button>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="course">courses taken</label>
+            <div class="col-sm-10">
+            	<input type="text" class="form-control" id="course" placeholder="courses taken" >
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="coursea">couses attended</label>
+            <div class="col-sm-10" >
+            	<input type="text" class="form-control" id="coursea" placeholder="course attended" >
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="mentor">Mentorship Provided</label>
+            <div class="col-sm-10" style=>
+            	<input type="text" class="form-control" id="mentor" placeholder="mentorship provided" >
+            </div>
+        </div>                  
+        <div class="form-group">
+        	<div class="col-sm-offset-2 col-sm-10">
+         		<button type="submit" class="btn btn-default">UPDATE</button>
+        	</div>
+        </div>
+    </form>
+        	
+  </div>
+  </div>
+  </div>
+</div>
+  
+</body>
+</html>
